@@ -1,9 +1,9 @@
 %define upstream_name    JSON-PP
-%define upstream_version 2.27105
+%define upstream_version 2.27200
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Dummy module providing JSON::PP::Boolean
 License:    GPL+ or Artistic
