@@ -1,15 +1,15 @@
-%define upstream_name    JSON-PP
-%define upstream_version 2.27200
+%define	modname	JSON-PP
+%define	modver	2.27200
 
-Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
+Release:	3
 
 Summary:	Dummy module providing JSON::PP::Boolean
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/JSON/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/JSON/%{modname}-%{modver}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -26,7 +26,7 @@ environment.
 JSON::PP is a pure-Perl module and has compatibility to JSON::XS.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{modname}-%{modver}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -43,11 +43,13 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/*
 %{_bindir}/json_pp
 %{_mandir}/man3/*
-%{_mandir}/man1/json_pp.1.xz
-
-
+%{_mandir}/man1/json_pp.1*
 
 %changelog
+* Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.272.0-3
+- rebuild against new perl-5.16.2
+- cleanups
+
 * Tue May 31 2011 Guillaume Rousse <guillomovitch@mandriva.org> 2.272.0-1mdv2011.0
 + Revision: 682134
 - update to new version 2.27200
