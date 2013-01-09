@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	4
+Release:	5
 
 Summary:	Dummy module providing JSON::PP::Boolean
 License:	GPL+ or Artistic
