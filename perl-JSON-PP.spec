@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	6
+Release:	7
 
 Summary:	Dummy module providing JSON::PP::Boolean
 License:	GPL+ or Artistic
@@ -33,7 +33,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-%make test
+make test
 
 %install
 %makeinstall_std
