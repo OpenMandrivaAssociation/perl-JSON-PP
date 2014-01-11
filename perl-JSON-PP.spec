@@ -1,14 +1,14 @@
 %define	modname	JSON-PP
-%define	modver	2.27200
+%define modver 2.27203
 
 Summary:	Dummy module providing JSON::PP::Boolean
 Name:		perl-%{modname}
-Version:	%{perl_convert_version %{modver}}
-Release:	11
+Version:	%perl_convert_version %{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/JSON/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/JSON/JSON-PP-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -42,4 +42,5 @@ make test
 %{_bindir}/json_pp
 %{_mandir}/man3/*
 %{_mandir}/man1/json_pp.1*
+
 

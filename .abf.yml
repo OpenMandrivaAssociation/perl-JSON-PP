@@ -1,2 +1,4 @@
+removed_sources:
+  JSON-PP-2.27200.tar.gz: 7e0e4a5160c0e2e8b8decef360bed231c763c910
 sources:
-  "JSON-PP-2.27200.tar.gz": 7e0e4a5160c0e2e8b8decef360bed231c763c910
+  JSON-PP-2.27203.tar.gz: 7659cd8b58ed42eae2c069f3181a8436c65ba895
