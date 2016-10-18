@@ -1,10 +1,10 @@
 %define	modname	JSON-PP
-%define modver 2.27300
+%define modver 2.27400
 
 Summary:	Dummy module providing JSON::PP::Boolean
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	4
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
