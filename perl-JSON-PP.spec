@@ -1,5 +1,5 @@
 %define	modname	JSON-PP
-%define modver 2.97000
+%define modver 2.97001
 
 Summary:	Dummy module providing JSON::PP::Boolean
 Name:		perl-%{modname}
