@@ -1,4 +1,4 @@
-%define	modname	JSON-PP
+%define	modname JSON-PP
 %define modver 2.97001
 %define __noautoreq perl\\(bytes\\)
 
