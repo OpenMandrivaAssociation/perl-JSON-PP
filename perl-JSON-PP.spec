@@ -1,10 +1,11 @@
 %define	modname	JSON-PP
 %define modver 2.97001
+%define __noautoreq perl\\(bytes\\)
 
 Summary:	Dummy module providing JSON::PP::Boolean
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -28,13 +29,13 @@ JSON::PP is a pure-Perl module and has compatibility to JSON::XS.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README META.yml Changes
