@@ -1,6 +1,6 @@
-%define	modname JSON-PP
+%define modname JSON-PP
 %define modver 2.97001
-%define __noautoreq perl\\(bytes\\)
+%global __requires_exclude perl\\(bytes\\) 
 
 Summary:	Dummy module providing JSON::PP::Boolean
 Name:		perl-%{modname}
